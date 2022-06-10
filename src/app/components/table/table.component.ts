@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {TableService} from '../../services/table.service';
 import {LocalDataSource} from 'ng2-smart-table';
 
 import {EditorComponent} from './editor/editor.component';
