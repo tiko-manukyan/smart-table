@@ -1,0 +1,9 @@
+<div class="position-relative editor">
+  <ckeditor
+    [editor]="Editor"
+    [data]="data"
+    [(ngModel)]="rowData.title"
+    (ngModelChange)="onModelChange(data)"
+  >
+  </ckeditor>
+</div>
