@@ -5,15 +5,13 @@ import {EditorComponent} from './editor/editor.component';
 import {ColorPickerComponent} from './color-picker/color-picker.component';
 
 
-
-
-
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
+
   data =  [
     {
       title: 'title1',
@@ -26,10 +24,11 @@ export class TableComponent implements OnInit {
       attachment: 'attachment2'
     }
   ];
+
   source = new LocalDataSource(this.data);
 
 
-  settings = {
+  mySettings = {
     actions: {
       add: true,
       edit: true,
